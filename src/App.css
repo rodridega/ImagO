@@ -7,6 +7,9 @@
 
 body{
   background-image: url(../src/images/heart-6972452_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container{
@@ -55,7 +58,23 @@ button:hover{
 .abombau{
   width: 300px;
   background-color: #f96f5d;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 2px solid white;
   padding: 10px;
+}
+.grilla{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+.card{
+
+  margin: 10px;
+  background-color: transparent;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+img{
+  width: 100%;
 }
