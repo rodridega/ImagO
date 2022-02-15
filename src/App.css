@@ -46,13 +46,13 @@ label{
 }
 button{
   margin: 0 auto;
+  width: 70%;
   padding: 10px;
-  font-size: 30px;
   background-color: #fbf2c0;
   box-shadow: inset 1px 1px 2px gray
 }
 button:hover{
-  background-color: #f96f5d;
+  background-color: #d6cb8a;
   cursor: pointer;
 }
 .abombau{
