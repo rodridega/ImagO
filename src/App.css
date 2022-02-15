@@ -1,38 +1,61 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image: url(../src/images/heart-6972452_1920.jpg);
+}
+
+.container{
+  width: 50%;
+  height: 400px;
+  background: rgb(177,169,124);
+background: linear-gradient(90deg, rgba(177,169,124,1) 8%, rgba(72,57,42,1) 100%);
+  margin: 100px auto;
+  box-shadow: 1px 2px 3px black;
+}
+h1{
   text-align: center;
+  color: #fbf2c0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 40px auto; 
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  margin-bottom: 30px;
+  height: 40px;
+  background-color: whitesmoke;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fbf2c0;
+}
+button{
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #fbf2c0;
+  box-shadow: inset 1px 1px 2px gray
+}
+button:hover{
+  background-color: #f96f5d;
+  cursor: pointer;
+}
+.abombau{
+  width: 300px;
+  background-color: #f96f5d;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding: 10px;
 }

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Formulario from './components/Formulario';
+import Mensaje from './components/Mensaje';
+import Titulo from './components/Titulo';
 
 function App() {
+
+  const [busqueda, completar] = useState('')
+  
+  
+  //Validar Formulario
+  console.log(busqueda);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+      <Titulo />
+      <Formulario 
+        completar={completar}
+        busqueda={busqueda} />
+      </div>
     </div>
   );
 }
