@@ -6,6 +6,7 @@
 }
 
 body{
+  
   background-image: url(../src/images/heart-6972452_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,14 +66,30 @@ button:hover{
 .grilla{
   display: grid;
   grid-template-columns: repeat(5, 20%);
+  background-color: white;
 }
 .card{
 
   margin: 10px;
   background-color: transparent;
 }
-.card:hover{
-  transform: scale(1.1);
+
+.cardText{
+  width: 100%;
+  text-align: center;
+  background: rgb(177,169,124);
+background: linear-gradient(90deg, rgba(177,169,124,1) 8%, rgba(72,57,42,1) 100%);
+  color: white;
+}
+
+.cardText a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.cardText a:hover{
+  color: #d6cb8a;
+  
 }
 
 img{
